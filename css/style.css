@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.first-section {
+    min-height: 850px;
+    background: url(../img/header-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    background: url(../img/log.png) center no-repeat;
+    width: 124px;
+    height: 32px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.main-nav {
+    display: none;
+    position: absolute;
+    height: 430px;
+    background: rgba(0,0,0,.25);
+    overflow: hidden;
+    right: 0;
+    height: 34.4%;
+    box-sizing: border-box;
+}
+
+nav ul { 
+    list-style: none; 
+    position: relative;
+    width: 320px;
+}
+
+nav a {
+    display: block;
+    width: 320px;
+    min-height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 1em;
+    position: relative;
+    text-transform: uppercase;
+    right: 2.9em;
+    color: #fff;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+nav a:first-child { border-top: 1px solid #eee; }
+
+nav a:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,.35);
+    color: #fff;
+    transition: background .2s linear;
+}
+
+nav a:active, nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.header-menu {
+    background: url(../img/header-menu.png) center no-repeat;
+    width: 82px;
+    height: 16px;
+    margin-top: 45px;
+    cursor: pointer;
+    float: right;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 245px;
+    font-size: 90pt;
+    text-shadow: 0 2px 22px rgba(255,255,255,.3);
+}
+.purpple {
+    color: #4aa0f8;
+    text-shadow: none;
+}
+
+.arrows {
+    display: block;
+    position: relative;
+    top: 20em;
+}
+
+.arrows > li:nth-of-type(1) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/down-arrow.png) no-repeat;
+    opacity: .302;
+    cursor: pointer;
+}
+
+.arrows > li:nth-of-type(2) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/down-arrow.png) no-repeat;
+    cursor: pointer;
+}
+
+.arrows > li:nth-of-type(3) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/down-arrow-blue.png) no-repeat;
+    cursor: pointer;
+}
+
+.scroll-down-icon {
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.second-section { min-height: 810px; }
+
+.about-us {
+    width: 260px;
+    margin-top: 105px;
+    font-size: 48pt;
+    color: #40485a;
+}
+
+.purple-border { border-bottom: 4px solid #4a24a8; padding-bottom: 30px; }
+
+.about-par {
+    margin-top: 105px;
+    font-size: 18pt;
+    color: #747a86;
+}
+
+.about-par:last-child { margin-top: 20px; }
+
+.about-image {
+    max-width: 475px;
+    min-height: 250px;
+    margin-top: 110px;
+    background: url(../img/about-img.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.second-image { background: url(../img/about-img-2.jpg) center no-repeat; }
+
+.third-image { background: url(../img/about-img-3.jpg) center no-repeat; }
+
+.fourth-image { background: url(../img/about-img-4.jpg) center no-repeat; }
+
+@media only screen and (max-width: 420px) {
+    
+    .about-image { display: none; }
+    
+    .about-par { font-size: 14pt; }
+    
+    .image-title { margin-bottom: 40px; }
+}
+
+.what-we-do {
+    font-size: 44pt;
+    color: #40485a;
+    margin-top: 95px;
+    text-align: center;
+}
+
+#third-section {
+    min-height: 800px;
+    margin-top: 50px;
+}
+
+.work { margin-top: 150px; }
+
+.image-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.images {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.image-title {
+    text-align: left;
+    width: 310px;
+    margin: 10px auto;
+    font-size: 16pt;
+    position: relative;
+    left: 30px;
+}
+
+.show-more {
+    margin-top: 100px;
+    text-align: center;
+    color: #4ca9ff;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+.underline:hover { border-bottom: 3px solid #4ca9ff; }
+
+#fourth-section {
+    margin-top: 50px;
+    min-height: 750px;
+    background: url(../img/fourth-section-bg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.blue-heading {
+    color: #4ca9ff;
+    text-shadow: none;
+}
+
+.fourth-section-heading {
+    text-transform: capitalize;
+    font-size: 56pt;
+    color: #fff;
+    width: 640px;
+    margin-top: 130px;
+    text-shadow: 0 2px 22px rgba(255,255,255,.3);
+}
+
+.fourth-section-title {
+    width: 670px;
+    color: #fff;
+    font-size: 16pt;
+    margin-top: 20px;
+    text-shadow: 0 2px 22px rgba(255,255,255,.3);
+}
+
+.first-screen {
+    margin-top: 88px;
+    width: 200px;
+    height: 355px;
+    background: url(../img/fourth-section-img2.png) center no-repeat;
+    box-shadow: 0 30px 28px 1px rgba(255,255,255,.1);
+    margin-left: -50px;
+}
+.second-screen {
+    margin-top: 108px;
+    width: 200px;
+    height: 355px;
+    background: url(../img/fourth-section-img.png) center no-repeat;
+    float: right;
+    box-shadow: 0 30px 28px 1px rgba(255,255,255,.1);
+}
+
+.case-study {
+    margin-top: 60px;
+    width: 190px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #4ca9ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12pt;
+    text-shadow: 0 2px 22px rgba(255,255,255,.3);
+    box-shadow: 0 20px 32px rgba(76,169,255,.4);
+}
+
+.case-study:active {
+    position: relative;
+    top: 2px;
+}
+
+.tab-container {
+    margin-top: 125px;
+    border-top: .5px solid #fff;
+}
+
+.tabs > span {
+    text-transform: uppercase;
+    font-size: 14pt;
+    color: #fff;
+}
+
+.tabs > h4 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 22pt;
+}
+
+.tabs {
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+.tabs:hover {
+    box-sizing: border-box;
+    border-top: 3px solid #fff;
+    transition: all .1s linear;
+}
+
+#fifth-section { min-height: 560px; }
+
+.thanks { margin-top: 160px;  }
+
+.thanks-title {
+    font-size: 21pt;
+    color: #40485a;
+    text-align: center;
+}
+
+.thanks-title > span { color: #4ca9ff; }
+
+.frank-underwood { margin-top: 40px; }
+
+.frank-photo {
+    width: 62px;
+    height: 62px;
+    background: url(../img/frank-underwood.png) center no-repeat;
+    border-radius: 50%;
+    float: left;
+}
+
+.frank-underwood > p {
+    width: 180px;
+    margin-left: 72px;
+    font-size: 15pt;
+    margin-top: -4px;
+}
+
+.frank-underwood > p:last-child { color: #4ca9ff; }
+
+#footer {
+    min-height: 415px;
+    background: url(../img/fourth-section-bg.jpg) center no-repeat;
+}
+
+#footer .logo { margin-top: 80px; }
+
+.footer-title {
+    margin-top: 25px;
+    font-size: 16pt;
+    color: #fff;
+    margin-left: -15px;
+}
+
+#footer .contact-us {
+    width: 190px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #4ca9ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12pt;
+    text-shadow: 0 2px 22px rgba(255,255,255,.3);
+    box-shadow: 0 20px 32px rgba(76,169,255,.4);
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+#footer .contact-us:active { margin-top: 27px; }
+
+.copyright {
+    margin-top: 100px;
+    border-top: 1px solid #fff;
+}
+
+.copyright-title {
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+
+.copyright-title > span { color: #4ca9ff; }
+
+.sumy-co {
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+
+.sumy-co > span { color: #4ca9ff; }
+
+
+
+                            /*  MEDIA  */
+
+@media only screen and (max-width: 420px) {
+    
+    .arrows {
+        top: .3em;
+        left: 2.4em;
+    }
+    
+    .about-us {
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .main-nav { margin-top: 6em; }
+    
+    nav ul li:nth-of-type(4), nav ul li:nth-of-type(5) { display: none; }
+    
+    .first-screen, .second-screen { display: none; }
+    
+    .img-block {
+        left: -1.4em;
+        margin-bottom: 2em;
+    }
+    
+    .frank-underwood { left: 2em; }
+    
+    #footer { margin-top: 2em; }
+}
