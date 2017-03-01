@@ -26,34 +26,33 @@
 .main-nav {
     display: none;
     position: absolute;
-    height: 430px;
+    width: 100%;
+    height: 440px;
     background: rgba(0,0,0,.25);
     overflow: hidden;
-    right: 0;
-    height: 34.4%;
+    height: 16.5em;
     box-sizing: border-box;
+    top: 7%;
 }
 
 nav ul { 
     list-style: none; 
     position: relative;
-    width: 320px;
+    width: 100%;
 }
 
 nav a {
     display: block;
-    width: 320px;
-    min-height: 65px;
+    width: 102%;
+    min-height: 45px;
     text-align: center;
-    line-height: 65px;
+    line-height: 45px;
     font-size: 1em;
     position: relative;
     text-transform: uppercase;
     right: 2.9em;
     color: #fff;
     border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
 }
 
 nav a:first-child { border-top: 1px solid #eee; }
@@ -412,11 +411,19 @@ h1 {
 
                             /*  MEDIA  */
 
+
+
 @media only screen and (max-width: 420px) {
     
     .arrows {
-        top: .3em;
+        top: 280px;
         left: 2.4em;
+    }
+    
+    h1 {
+        position: relative;
+        top: 95px;
+        font-size: 64px;
     }
     
     .about-us {
@@ -424,9 +431,20 @@ h1 {
         margin-left: 20px;
     }
     
-    .main-nav { margin-top: 6em; }
+    .main-nav { 
+        width: 400px;
+        margin-top: 5em; 
+    }
     
-    nav ul li:nth-of-type(4), nav ul li:nth-of-type(5) { display: none; }
+    nav ul li a {
+        width: 400px;
+        border-right: none;
+        border-top: none;
+    }
+    
+    nav ul li a:last-child {
+        border-bottom: 1px solid #eee;
+    }
     
     .first-screen, .second-screen { display: none; }
     
