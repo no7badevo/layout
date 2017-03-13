@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -98,7 +98,7 @@ h1 {
 .arrows {
     display: block;
     position: relative;
-    top: 20em;
+    top: 300px;
 }
 
 .arrows > li:nth-of-type(1) {
@@ -172,7 +172,7 @@ h1 {
     
     .about-par { font-size: 14pt; }
     
-    .image-title { margin-bottom: 40px; }
+    .image-title { margin-bottom: 10px; }
 }
 
 .what-we-do {
@@ -408,12 +408,13 @@ h1 {
 .sumy-co > span { color: #4ca9ff; }
 
 
+                        
 
-                            /*  MEDIA  */
+                            /******  MEDIA FOR MOBILE *******/
 
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
     
     .arrows {
         top: 280px;
@@ -424,6 +425,10 @@ h1 {
         position: relative;
         top: 95px;
         font-size: 64px;
+    }
+    
+    .about-image {
+        margin-top: 5px;
     }
     
     .about-us {
@@ -460,4 +465,68 @@ h1 {
     .frank-underwood { left: 5em; }
     
     #footer { margin-top: 2em; }
+}
+
+
+
+/******  MEDIA FOR TABLET *******/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .main-nav { margin-top: 1em; }
+    
+    .about-image { 
+        display: none;
+    }
+    
+    .about-us { float: left; }
+    
+    .about-par { 
+        float: left;
+        width: 380px;
+        font-size: 16pt;
+        margin-left: 35px;
+    }
+    
+    .img-block:nth-of-type(2) { margin-top: 30px; }
+    
+    .img-block:last-child {
+        margin-top: 70px;
+        margin-left: -160px;
+    }
+    
+    .first-screen, .second-screen { display: none; }
+    
+    .frank-underwood { left: 17.5em; }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    
+    .arrows { 
+        top: -15px; 
+        left: 3em;
+    }
+    
+    h1 {
+        position: relative;
+        top: 95px;
+        font-size: 90px;
+    }
+    
+    .about-us { float: left; }
+    
+    .about-par { 
+        float: left;
+        width: 500px;
+        font-size: 18pt;
+        margin-left: 50px;
+    }
+    
+    .first-screen, .second-screen { display: none; }
+    
+    .frank-underwood { left: 20em;}
+    
+    .arrows { top: 220px; }
 }
